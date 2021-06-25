@@ -1,38 +1,90 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  width: 400px;
+  height: 600px;
   display: flex;
   flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  border: solid;
+  border-radius: 30px;
+  border-color: #06608a;
+  background-color: #2980b9;
+  margin-top: 20px;
+  font-family: roboto, sans-serif;
+  box-shadow: 1px 4px 0 1px #212121, inset -1px -3px 8px 2px #515151;
+}
+
+.Calculation {
+  display: flex;
+  justify-content: flex-end;
   align-items: center;
+  background-color: #bdc3c7;
+  border: none;
+  border-width: 1px;
+  border-radius: 20px;
+  color: black;
+  font-size: 400%;
+  margin: 10px;
+  margin-top: 20px;
+  padding-right: 15px;
+  height: 20%;
+  box-shadow: inset -4px 4px 2px #171717;
+}
+
+.Button {
+  width: 25%;
+  border: solid;
+  border-width: 1px;
+  color: green;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  font-size: 250%;
+  background-color: lightgrey;
+  margin: 12px;
+  border-radius: 20px;
+  flex-grow: 1;
+  font: comic sans;
 }
 
-.App-link {
-  color: #61dafb;
+.Button:active {
+  transform: translate(0, 3px);
+  box-shadow: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Zero {
+  width: 58%;
+}
+
+.Button:hover {
+  cursor: pointer;
+}
+
+.ButtonRow {
+  display: flex;
+  height: 25%;
+}
+
+.ButtonContainer {
+  width: 100%;
+  height: 83.33333%;
+  display: flex;
+  flex-direction: column;
+}
+
+.Num,
+.Zero {
+  color: #171717;
+  background-color: whitesmoke;
+  border: none;
+  box-shadow: 1px 4px 0 1px #212121, inset -1px -3px 8px 2px #515151;
+}
+
+.Act,
+.Op {
+  color: whitesmoke;
+  background-color: #171717;
+  border: none;
+  box-shadow: 1px 4px 0 1px #212121, inset -1px -3px 8px 2px #515151;
 }
